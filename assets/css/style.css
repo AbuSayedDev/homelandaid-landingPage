@@ -28,7 +28,7 @@ body {
 }
 
 body {
-    /* background: #06053C none repeat scroll 0 0; */
+    background: #06053C none repeat scroll 0 0;
     color: #2A2A2A;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -188,6 +188,101 @@ ol {
 .hero-header .img-area img {
     margin-top: 110px;
 }
+
+/*===================================*
+  02.START CALCULATOR STYLE
+*===================================*/
+
+#calculator-area {
+    width: 100%;
+    height: auto;
+    padding: 100px 0 0 0;
+    clear: both;
+}
+
+/* right-item-area */
+
+.calculator-wrapper {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/calculate-bag-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.calculator-wrapper .img-ara .img1 {
+    width: 72%;
+    height: auto;
+    position: relative;
+    float: right;
+}
+
+.calculator-wrapper .img-ara .img2 {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: 29px;
+    transition: all 2s;
+}
+
+.calculator-wrapper .img-ara .img3 {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    top: 39px;
+    right: 50px;
+    transition: all 2s;
+}
+
+.img-ara:hover:hover .img2 {
+    margin-top: -4px;
+    transition: all 2s;
+}
+
+.img-ara:hover:hover .img3 {
+    margin-top: -12px;
+    transition: all 2s;
+}
+
+
+.calculator-wrapper .right-item-area {
+    clear: both;
+    top: -42px;
+    position: relative;
+}
+
+.calculator-wrapper .right-item-area .content-area h1 {
+    font-size: 43px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 54px;
+}
+
+.calculator-wrapper .right-item-area .content-area h1 span {
+    font-size: 33px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.calculator-wrapper .right-item-area .btn-area {
+    text-align: right;
+}
+
+.calculator-wrapper .right-item-area .btn-area .custom-btn {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
 
 
 
