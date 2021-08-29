@@ -1,0 +1,45 @@
+/*
+    * Project Name: Home Land Aid
+    * Project Athor: Abu Sayed
+    * Project Athor URL: https://abusayed.info/
+    * Project Date: 29/08/2021
+*/
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul>li {
+    list-style: none;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+a {
+    color: #FF0276;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (max-width: 800px) {}
