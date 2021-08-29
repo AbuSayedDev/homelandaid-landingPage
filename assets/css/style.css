@@ -1,42 +1,151 @@
-/*
-    * Project Name: Home Land Aid
-    * Project Athor: Abu Sayed
-    * Project Athor URL: https://abusayed.info/
-    * Project Date: 29/08/2021
-*/
+/*=========================================================
+Author              : Abu Sayed
+Author URL          : https://abusayed.info/
+Template Name       : Home Land Aid
+Version             : 1.1
+Template Start Date : Home Land Aid
+==============================================================*/
 
+/*=============================================================
+    CSS INDEX
+    =============================
+    01.GENERAL STYLE (body, link color, buttons etc.)
+    02.START HEADER STYLE
+		
+*=============================================================*/
+
+/*===================================*
+  01.GENERAL STYLE
+*===================================*/
 
 html,
 body {
-    padding: 0;
-    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
+body {
+    /* background: #06053C none repeat scroll 0 0; */
+    color: #2A2A2A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
-ul>li {
-    list-style: none;
-    font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: justify;
+    color: #FFFFFF;
+    line-height: 31px;
+    margin-bottom: 0px;
+    font-family: 'Poppins', Light;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 a {
-    color: #FF0276;
+    color: #2A2A2A;
     text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a:hover {
+    color: #2A2A2A;
     text-decoration: none;
 }
 
+a:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+button {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-btn {
+    padding: 1em 1.5em;
+    background-color: #FFDC2D;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Poppins', Regular;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    color: #2A2A2A;
+    display: inline-block;
+}
+
+/*===================================*
+  02.START HEADER STYLE
+*===================================*/
+
+.header-wrapper {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/headerBanner2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* nav-menu */
+
+.nav-menu .custom-nav {
+    padding-top: 30px !important;
+}
+
+.navbar-brand img {
+    width: 100px !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Poppins', Light;
+    color: #CABED4;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* .navbar-nav .nav-item .nav-link::before {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFFFFF;
+}
 
 
 
