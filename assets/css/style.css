@@ -13,6 +13,8 @@ Template Start Date : Home Land Aid
     02.START HEADER STYLE
     03.START CALCULATOR STYLE
     04.START SERVICES STYLE
+    05.START OURALGORITHMS STYLE
+    06.START BLOG STYLE
 		
 *=============================================================*/
 
@@ -466,7 +468,6 @@ input[type="number"] {
     font-weight: 600;
 }
 
-.service-area .service-item .img-area img {}
 
 .service-area .service-item .content-area .logo-img .img-one {
     width: 30px;
@@ -555,9 +556,32 @@ input[type="number"] {
 
 
 /*===================================*
-  04.START OURALGORITHMS STYLE
+  05.START OURALGORITHMS STYLE
 *===================================*/
 
+
+#our-algorithms-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.our-algorithms {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/ouralgorithms/bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.our-algorithms-area {
+    padding-top: 200px !important;
+}
 
 .our-algorithms .rightcontent-area {
     width: 100%;
@@ -576,8 +600,87 @@ input[type="number"] {
     padding-top: 67px !important;
 }
 
+/*===================================*
+  06.START BLOG STYLE
+*===================================*/
+.blog-area {
+    width: 100%;
+    height: 100vh;
+    margin: 100px 0 0 0;
+    background-image: url(../images/blog/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.blog-area .heading h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 70px;
+}
+
+.blog-item-area {
+    position: relative;
+}
 
 
+.blog-item-area .bg::before {
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/blog/sub-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    top: -76px;
+    left: -67px;
+    z-index: -1;
+}
+
+
+.blog-area .blog-item {
+    width: 100%;
+    height: auto;
+    background-color: #26245E;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.blog-area .blog-item .heading h3 {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+
+.blog-area .blog-item .img-area img {
+    opacity: .6;
+}
+
+.blog-area .blog-item .img-area img:hover {
+    opacity: 1.0;
+}
+
+
+.blog-area .blog-item .readmore {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.blog-area .blog-item .readmore a {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+    color: #FFFFFF;
+    display: -webkit-inline-box;
+    text-align: start;
+    border-bottom: 1px solid #FFFFFF;
+}
 
 
 
@@ -602,6 +705,14 @@ input[type="number"] {
     .input-item ul li {
         margin: 0px 2px;
         padding: 6px 5px;
+    }
+
+    .our-algorithms-area {
+        padding-top: 15px !important;
+    }
+
+    .our-algorithms {
+        height: 100vh;
     }
 }
 
@@ -646,6 +757,10 @@ input[type="number"] {
         padding: 0 0 0 0;
         margin: 50px 0 0 0;
     }
+
+    .our-algorithms {
+        height: 30vh;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -666,6 +781,14 @@ input[type="number"] {
     .calculator-wrapper {
         padding-top: 0 !important;
         padding-bottom: 10px !important;
+    }
+
+    .our-algorithms-area {
+        padding-top: 50px !important;
+    }
+
+    .our-algorithms {
+        height: 100vh;
     }
 }
 
@@ -759,6 +882,10 @@ input[type="number"] {
         padding: 0px 0 0 0;
         margin: 0px 0 0 0;
     }
+
+    .our-algorithms {
+        height: 40vh;
+    }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 600px) {
@@ -782,6 +909,14 @@ input[type="number"] {
 
     .calculator-wrapper .right-item-area .content-area h1 {
         font-size: 51px;
+    }
+
+    .our-algorithms {
+        height: 93vh;
+    }
+
+    .our-algorithms .rightcontent-area h2 {
+        padding-top: 0px !important;
     }
 }
 
@@ -821,6 +956,10 @@ input[type="number"] {
     .calculator-wrapper .right-item-area {
         margin-top: 78px;
     }
+
+    .our-algorithms {
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -830,6 +969,10 @@ input[type="number"] {
 
     .calculator-wrapper .input-item ul li {
         padding: 6px 12px;
+    }
+
+    .our-algorithms {
+        height: 100vh;
     }
 }
 
@@ -854,6 +997,15 @@ input[type="number"] {
 
     .calculator-wrapper .input-item ul li {
         padding: 6px 10px;
+    }
+
+    .blog-area .heading h2 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .blog-area .heading {
+        margin-bottom: 0 !important;
     }
 }
 
@@ -920,6 +1072,14 @@ input[type="number"] {
         margin: 0px 2px;
         padding: 6px 4px;
     }
+
+    .our-algorithms .rightcontent-area h2 {
+        font-size: 32px;
+    }
+
+    .our-algorithms {
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 280px) {
@@ -954,5 +1114,17 @@ input[type="number"] {
 
     .header-wrapper {
         height: 614px;
+    }
+
+    .our-algorithms {
+        height: 80vh;
+    }
+
+    .our-algorithms .rightcontent-area h2 {
+        font-size: 22px;
+    }
+
+    .our-algorithms-area {
+        padding-top: 0 !important;
     }
 }
