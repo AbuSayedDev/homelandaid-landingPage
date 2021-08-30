@@ -11,11 +11,13 @@ Template Start Date : Home Land Aid
     =============================
     01.GENERAL STYLE (body, link color, buttons etc.)
     02.START HEADER STYLE
+    03.START CALCULATOR STYLE
+    04.START SERVICES STYLE
 		
 *=============================================================*/
 
 /*===================================*
-  01.GENERAL STYLE
+  01.GENERAL STYLE 
 *===================================*/
 
 html,
@@ -28,9 +30,9 @@ body {
 }
 
 body {
-    background: #06053C none repeat scroll 0 0;
-    color: #2A2A2A;
-    font-family: 'Poppins', sans-serif;
+    background: #06053c none repeat scroll 0 0;
+    color: #2a2a2a;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
 }
 
@@ -40,13 +42,13 @@ h3,
 h4,
 h5,
 h6 {
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
     line-height: 80px;
 }
 
 p {
-    color: #FFFFFF;
+    color: #ffffff;
     line-height: 31px;
     margin-bottom: 0px;
     font-size: 14px;
@@ -54,14 +56,14 @@ p {
 }
 
 a {
-    color: #2A2A2A;
+    color: #2a2a2a;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #2A2A2A;
+    color: #2a2a2a;
     text-decoration: none;
 }
 
@@ -76,7 +78,7 @@ img {
 
 button {
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 ul,
@@ -86,15 +88,25 @@ ol {
     padding: 0;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .custom-btn {
     padding: 10px 25px;
-    background-color: #FFDC2D;
+    background-color: #ffdc2d;
     border-radius: 10px;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     align-items: center;
-    color: #2A2A2A;
+    color: #2a2a2a;
     display: inline-block;
 }
 
@@ -110,7 +122,6 @@ ol {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 /* nav-menu */
 
@@ -129,7 +140,7 @@ ol {
 .nav-menu .navbar-nav .nav-item .nav-link {
     font-size: 18px;
     font-weight: 300;
-    color: #CABED4;
+    color: #cabed4;
     padding-right: 1rem;
     padding-left: 1rem;
     position: relative;
@@ -142,7 +153,7 @@ ol {
     padding: 0px;
     border-radius: 100%;
     display: block;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     position: absolute;
     transition: all ease-in-out 250ms;
     content: "";
@@ -156,9 +167,8 @@ ol {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #FFFFFF;
+    color: #ffffff;
 }
-
 
 /* hero-header */
 .hero-header {
@@ -181,7 +191,7 @@ ol {
     font-weight: 400;
     text-align: center;
     align-items: center;
-    color: #FFFFFF;
+    color: #ffffff;
     display: inline-block;
 }
 
@@ -190,7 +200,7 @@ ol {
 }
 
 /*===================================*
-  02.START CALCULATOR STYLE
+  03.START CALCULATOR STYLE
 *===================================*/
 
 #calculator-area {
@@ -207,6 +217,20 @@ ol {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.calculator-wrapper::before {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/calculate-left2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0;
 }
 
 .calculator-item-area .heading h1 {
@@ -237,34 +261,33 @@ ol {
 }
 
 .tab-area .nav-pills {
-    background-color: #3B3A6D;
+    background-color: #3b3a6d;
     border-radius: 10px;
 }
-
 
 .tab-area .nav-pills .nav-item .nav-link {
     font-size: 16px;
     font-weight: 300;
     padding: 10px 49px;
-    background-color: #3B3A6D;
+    background-color: #3b3a6d;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .tab-area .nav-pills .nav-item .nav-link.active {
-    background-color: #67759E;
+    background-color: #67759e;
 }
 
 .calculator-wrapper .form-area .input-group-text {
     background-color: #e9ecef00;
     border: 1px solid #ced4da00;
-    border-bottom: 1px solid #45456E;
+    border-bottom: 1px solid #45456e;
 }
 
 .calculator-wrapper .form-area .form-control {
     background-color: #fff0;
     border: 1px solid #ced4da00;
-    border-bottom: 1px solid #45456E;
+    border-bottom: 1px solid #45456e;
 }
 
 .calculator-wrapper .form-area .form-control:focus {
@@ -273,16 +296,16 @@ ol {
     border-color: #80bdff00;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%);
-    border-bottom: 1px solid #45456E;
+    border-bottom: 1px solid #45456e;
 }
 
 .input-item ul li {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     list-style: none;
     float: left;
-    border-bottom: 1px solid #45456E;
+    border-bottom: 1px solid #45456e;
     margin: 0px 6px;
     padding: 6px 7px;
     text-align: center;
@@ -297,7 +320,7 @@ ol {
 .input-item ul li::before {
     width: 2px;
     height: 24px;
-    background-color: #45456E;
+    background-color: #45456e;
     position: absolute;
     content: "";
     top: 5px;
@@ -356,16 +379,15 @@ ol {
     transition: all 2s;
 }
 
-.img-ara:hover:hover .img2 {
+.img-ara:hover .img2 {
     margin-top: -4px;
     transition: all 2s;
 }
 
-.img-ara:hover:hover .img3 {
+.img-ara:hover .img3 {
     margin-top: -12px;
     transition: all 2s;
 }
-
 
 .calculator-wrapper .right-item-area {
     clear: both;
@@ -393,6 +415,169 @@ ol {
 .calculator-wrapper .right-item-area .btn-area .custom-btn {
     font-size: 18px;
 }
+
+/*===================================*
+  04.START SERVICES STYLE
+*===================================*/
+
+
+.service-area {
+    width: 100%;
+    height: auto;
+    padding: 100px 0 0 0;
+    margin: 100px 0 0 0;
+    background-image: url(../images/calculate-bag-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.service-area::before {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/calculate-left222.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+.service-area::after {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/calculate-left22.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contacin;
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    right: 0;
+    z-index: -1;
+}
+
+.service-area .left-content .content-area h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.service-area .service-item .img-area img {}
+
+.service-area .service-item .content-area .logo-img .img-one {
+    width: 30px;
+    display: block;
+    position: relative;
+}
+
+.logo-img {
+    position: relative;
+}
+
+
+
+.service-area .service-item .content-area .logo-img .two-hober-img {
+    width: 46px;
+    height: auto;
+    position: absolute;
+    top: -6px;
+    left: -7px;
+    transition: all 2s;
+    display: inline-block;
+    z-index: 2;
+    display: none;
+}
+
+.service-area .service-item .content-area .logo-img .three-hiddenimg {
+    width: 34px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    transition: all 2s;
+    display: inline-block;
+    z-index: 2;
+    display: none;
+}
+
+.service-area .service-item .content-area .logo-img .two-five-img {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    transition: all 2s;
+    display: inline-block;
+    z-index: 2;
+    display: none;
+}
+
+.service-area .service-item .content-area .logo-img .ser-four-img-2 {
+    width: 20px;
+    height: auto;
+    left: 5px;
+    transition: all 2s;
+    display: block;
+}
+
+.logo-img:hover .two-hober-img {
+    display: block !important;
+    transition: all 2s;
+}
+
+.logo-img:hover .three-hiddenimg {
+    display: block !important;
+    transition: all 2s;
+}
+
+.logo-img:hover .two-five-img {
+    display: block !important;
+    transition: all 2s;
+}
+
+.logo-img:hover .ser-four-img-2 {
+    top: -4px;
+    transition: all 2s;
+}
+
+.service-area .service-item .content-area .logo-img .img-two {
+    width: 70px;
+}
+
+.service-area .service-item .content-area .text-area p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+/*===================================*
+  04.START OURALGORITHMS STYLE
+*===================================*/
+
+
+.our-algorithms .rightcontent-area {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/ouralgorithms/right.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contacin;
+}
+
+.our-algorithms .rightcontent-area h2 {
+    font-size: 34px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 19px;
+    padding-top: 67px !important;
+}
+
+
+
 
 
 
@@ -450,11 +635,18 @@ ol {
     }
 
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 70px;
+        padding: 10px 75px;
     }
 
-}
+    .service-area .left-content .content-area h1 {
+        font-size: 32px;
+    }
 
+    .service-area {
+        padding: 0 0 0 0;
+        margin: 50px 0 0 0;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .nav-menu .navbar-nav .nav-item .nav-link:hover::before {
@@ -471,8 +663,11 @@ ol {
         font-size: 45px;
     }
 
+    .calculator-wrapper {
+        padding-top: 0 !important;
+        padding-bottom: 10px !important;
+    }
 }
-
 
 @media only screen and (max-width: 992px) and (min-width: 800px) {
     .tab-area .nav-pills .nav-item .nav-link {
@@ -492,7 +687,6 @@ ol {
     }
 
     .calculator-wrapper .img-ara .img0 {
-
         right: 0;
     }
 
@@ -504,8 +698,8 @@ ol {
     #calculator-area {
         padding: 150px 0 0 0;
     }
-}
 
+}
 
 @media only screen and (max-width: 800px) {
     .hero-header .content-area .heading h1 {
@@ -535,11 +729,15 @@ ol {
     .calculator-wrapper .input-item ul li {
         margin: 0px 32px;
         padding: 6px 22px;
-
     }
 
     .calculator-wrapper .right-item-area {
         margin-top: 101px;
+    }
+
+    .service-area {
+        padding: 0px 0 0 0;
+        margin: 50px 0 0 0;
     }
 }
 
@@ -556,8 +754,12 @@ ol {
         margin-left: 0;
         padding-left: 0;
     }
-}
 
+    .service-area {
+        padding: 0px 0 0 0;
+        margin: 0px 0 0 0;
+    }
+}
 
 @media only screen and (max-width: 767px) and (min-width: 600px) {
     .tab-area .nav-pills .nav-item .nav-link {
@@ -568,7 +770,6 @@ ol {
         margin: 0px 11px;
     }
 }
-
 
 @media only screen and (max-width: 600px) {
     .tab-area .nav-pills .nav-item .nav-link {
@@ -584,6 +785,15 @@ ol {
     }
 }
 
+@media only screen and (max-width: 540px) and (min-width: 480px) {
+    .tab-area .nav-pills .nav-item .nav-link {
+        padding: 10px 71px;
+    }
+
+    .calculator-wrapper .input-item ul li {
+        padding: 6px 14px;
+    }
+}
 
 
 @media screen and (max-width: 480px) {
@@ -613,7 +823,6 @@ ol {
     }
 }
 
-
 @media screen and (max-width: 414px) {
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 54px;
@@ -623,7 +832,6 @@ ol {
         padding: 6px 12px;
     }
 }
-
 
 @media screen and (max-width: 411px) {
     .tab-area .nav-pills .nav-item .nav-link {
@@ -672,8 +880,6 @@ ol {
         padding: 6px 7px;
     }
 }
-
-
 
 @media screen and (max-width: 360px) {
     .tab-area .nav-pills .nav-item .nav-link {
@@ -744,5 +950,9 @@ ol {
 
     .calculator-wrapper .right-item-area .content-area h1 span {
         font-size: 23px;
+    }
+
+    .header-wrapper {
+        height: 614px;
     }
 }
