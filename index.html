@@ -97,23 +97,157 @@
 
         <!-- CALCULATOR -->
         <section id="calculator-area">
-            <div class="calculator-wrapper">
+            <div class="calculator-wrapper py-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-10 m-auto">
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-8">
-                                    <div class="calculator py-2">
+                            <div class="row calculator-section justify-content-between">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-custom-md">
+                                    <div class="calculator-item-area py-2 text-center">
+                                        <div class="heading text-center pt-1">
+                                            <h1>1,120</h1>
+                                            <img src="assets/images/calculator-sub-img2.png" class="img-fluid" alt="Responsive image">
+                                        </div>
 
+                                        <div class="tab-area">
+                                            <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Fixed</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Variable</a>
+                                                </li>
+                                              </ul>
+                                              <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                    <div class="form-area">
+                                                        <form action="#">
+
+                                                            <div class="input-item">
+                                                                <label class="sr-only" for="inlineFormInputGroup">Input Amount</label>
+                                                                <div class="input-group mb-3">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text pl-0">
+                                                                        <img src="assets/images/moneyinput2.png" class="img-fluid" alt="Responsive image">
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Input Amount">
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="input-item">
+                                                                <label class="sr-only" for="inputYears">Input Years</label>
+                                                                <div class="input-group mb-3">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text pl-0">
+                                                                        <img src="assets/images/calendarinput2.png" class="img-fluid" alt="Responsive image">
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="number" class="form-control" id="inputYears" placeholder="Input Years">
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="input-item">
+                                                                <label class="sr-only" for="inputpercentage">Input Percentage</label>
+                                                                <div class="input-group mb-3">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text pl-0">
+                                                                        <img src="assets/images/calculatorperspe2.png" class="img-fluid" alt="Responsive image">
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="number" class="form-control" id="inputpercentage" placeholder="Input Percentage">
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="input-item"  style="display: inline-block;">
+                                                                <ul>
+                                                                    <li class="d-flex">
+                                                                        <span><img src="assets/images/iiscountinput2.png" class="img-fluid" alt="Responsive image"></span>
+                                                                        <span class="ml-3">Rate</span>
+                                                                    </li>
+                                                                    <li>1.59%</li>
+                                                                    <li>1.64%</li>
+                                                                    <li>1.64%</li>
+                                                                </ul>
+                                                              </div>
+
+                                                              <div class="btn-area py-3">
+                                                                <a href="#" class="custom-btn">Submit</a>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                    <div class="form-area">
+                                                        <form action="#">
+
+                                                            <div class="input-item">
+                                                                <label class="sr-only" for="inlineFormInputGroup">Input Amount</label>
+                                                                <div class="input-group mb-3">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text pl-0">
+                                                                        <img src="assets/images/moneyinput2.png" class="img-fluid" alt="Responsive image">
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Input Amount">
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="input-item">
+                                                                <label class="sr-only" for="inputYears">Input Years</label>
+                                                                <div class="input-group mb-3">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text pl-0">
+                                                                        <img src="assets/images/calendarinput2.png" class="img-fluid" alt="Responsive image">
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="number" class="form-control" id="inputYears" placeholder="Input Years">
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="input-item">
+                                                                <label class="sr-only" for="inputpercentage">Input Percentage</label>
+                                                                <div class="input-group mb-3">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text pl-0">
+                                                                        <img src="assets/images/calculatorperspe2.png" class="img-fluid" alt="Responsive image">
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="number" class="form-control" id="inputpercentage" placeholder="Input Percentage">
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="input-item"  style="display: inline-block;">
+                                                                <ul>
+                                                                    <li class="d-flex">
+                                                                        <span><img src="assets/images/iiscountinput2.png" class="img-fluid" alt="Responsive image"></span>
+                                                                        <span class="ml-3">Rate</span>
+                                                                    </li>
+                                                                    <li>1.59%</li>
+                                                                    <li>1.64%</li>
+                                                                    <li>1.64%</li>
+                                                                </ul>
+                                                              </div>
+
+                                                              <div class="btn-area py-3">
+                                                                <a href="#" class="custom-btn">Submit</a>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                               
+                                              </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-
-                                    
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 offset-md-0 offset-lg-2">
 
                                     <div class="right-item-area">
                                         <div class="img-ara">
+                                            <img src="assets/images/calculate-right2.png" class="img-fluid img0" alt="Responsive image" />
                                             <img src="assets/images/calculate-right-bg2.png" class="img-fluid img1" alt="Responsive image" />
                                             <img src="assets/images/calculate-right-bg-arr2.png" class="img-fluid img2" alt="Responsive image" />
                                             <img src="assets/images/calculate-right-bg-man.png" class="img-fluid img3" alt="Responsive image" />
