@@ -100,6 +100,11 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+::-webkit-input-placeholder {
+    color: #ffffffb3 !important;
+}
+
+
 .custom-btn {
     padding: 10px 25px;
     background-color: #ffdc2d;
@@ -280,18 +285,22 @@ input[type="number"] {
     background-color: #67759e;
 }
 
+.contact-area .form-area .input-group-text,
 .calculator-wrapper .form-area .input-group-text {
     background-color: #e9ecef00;
     border: 1px solid #ced4da00;
     border-bottom: 1px solid #45456e;
 }
 
+.contact-area .form-area .form-control,
 .calculator-wrapper .form-area .form-control {
     background-color: #fff0;
     border: 1px solid #ced4da00;
     border-bottom: 1px solid #45456e;
+    color: #ffffffb3 !important;
 }
 
+.contact-area .form-area .form-control:focus,
 .calculator-wrapper .form-area .form-control:focus {
     color: #495057;
     background-color: #fff0;
@@ -339,6 +348,7 @@ input[type="number"] {
     right: 0;
 }
 
+.contact-info .form-area .custom-btn,
 .tab-area .form-area .custom-btn {
     padding: 5px 22px;
     font-size: 18px;
@@ -605,13 +615,13 @@ input[type="number"] {
 *===================================*/
 .blog-area {
     width: 100%;
-    height: 100vh;
-    margin: 100px 0 0 0;
+    padding: 50px 0;
     background-image: url(../images/blog/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    bottom: 0;
 }
 
 .blog-area .heading h2 {
@@ -681,6 +691,88 @@ input[type="number"] {
     text-align: start;
     border-bottom: 1px solid #FFFFFF;
 }
+
+/*===================================*
+  06.START CONTACT STYLE
+*===================================*/
+.contact-area {
+    width: 100%;
+    height: auto;
+    padding: 100px 0 0 0;
+    padding-bottom: 20px;
+    clear: both;
+    position: relative;
+}
+
+.contact-area::after {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/contact/left-bg.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.contact-area::before {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/contact/right-bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.contact-area .heading img {
+    width: 329px;
+    height: 149px;
+    margin: 40px 0;
+}
+
+
+.contact-info {
+    border: 1px solid 151447;
+    background-color: #151447;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    z-index: 27;
+}
+
+
+.contact-info .left-img img {
+    position: absolute;
+    top: -80px;
+    left: -89px;
+}
+
+.contact-area .sub-content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6A6A8B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
