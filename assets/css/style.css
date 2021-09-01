@@ -766,11 +766,9 @@ input[type="number"] {
     position: absolute;
 }
 
-
 .footer-item .heading h2 {
     font-size: 22px;
     font-weight: 300;
-
 }
 
 .footer-item .content-area ul li {
@@ -802,11 +800,9 @@ input[type="number"] {
     font-weight: 400;
 }
 
-
 .footer-item .content-area .social-icon li a:hover {
     margin-left: 0px;
 }
-
 
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
     .custom-btn {
@@ -911,7 +907,6 @@ input[type="number"] {
     .footer-item .content-area .social-icon li a {
         font-size: 22px;
     }
-
 }
 
 @media only screen and (max-width: 992px) {
@@ -1026,7 +1021,6 @@ input[type="number"] {
         top: 0;
         left: 0;
     }
-
 
     .footer-item .content-area ul li {
         font-size: 14px;
