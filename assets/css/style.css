@@ -15,8 +15,9 @@ Template Start Date : Home Land Aid
     04.START SERVICES STYLE
     05.START OURALGORITHMS STYLE
     06.START BLOG STYLE
-    07.START CONTACT STYLE
-    08.START FOOTER STYLE
+    07.START CLIENT STYLE
+    08.START CONTACT STYLE
+    09.START FOOTER STYLE
 		
 *=============================================================*/
 
@@ -683,13 +684,137 @@ input[type="number"] {
 }
 
 /*===================================*
-  07.START CONTACT STYLE
+  07.CLIENT STYLE 
+*===================================*/
+
+.client-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.client-wrapper .client-bg {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.client-wrapper .client-bg::after {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/client/left-button-bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0;
+}
+
+.client-wrapper .client-bg::before {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/client/top-right-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -100px;
+}
+
+.client-wrapper .client-bg .main-content .content-area {
+    padding-top: 120px;
+    position: relative;
+}
+
+.client-wrapper .client-bg .main-content .content-area h1 {
+    position: relative;
+    z-index: 27;
+}
+
+.client-wrapper .client-bg .main-content .content-area h1::after {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/client/text-bg.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    position: absolute;
+    content: "";
+    top: -50px;
+    left: -19px;
+    z-index: -1;
+}
+
+.client-wrapper .client-bg .main-content .client-item {
+    background: #151447;
+    border-radius: 25px;
+    padding: 30px 20px 10px 20px;
+    position: relative;
+    z-index: 27;
+}
+
+.client-wrapper .client-bg .main-content .client-item .img-area {
+    position: relative;
+}
+
+.client-wrapper .client-bg .main-content .client-item .img-area img {
+    width: 138px;
+    padding: 10px;
+    border: 6px solid #06053c;
+    border-radius: 100%;
+}
+
+.client-wrapper .client-bg .main-content .client-item2::before {
+    width: 100%;
+    height: 60px;
+    background-image: url(../images/client/slider1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: -28px;
+    left: 0px;
+}
+
+.client-wrapper .client-bg .main-content .client-item1::before {
+    width: 100%;
+    height: 40px;
+    background-image: url(../images/client/slider1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: -19px;
+    left: 0px;
+}
+
+.client-wrapper .client-bg .main-content .client-img-2 .img-area img {
+    width: 100px !important;
+}
+
+.client-wrapper .client-bg .main-content .client-item .content-ara h2 {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.client-wrapper .client-bg .main-content .client-item .content-ara p {
+    padding: 0 30px;
+    color: #a1a1b5;
+}
+
+/*===================================*
+  08.START CONTACT STYLE
 *===================================*/
 
 .contact-area {
     width: 100%;
     height: auto;
-    padding: 100px 0 0 0;
     padding-bottom: 20px;
     clear: both;
     position: relative;
@@ -726,7 +851,7 @@ input[type="number"] {
 .contact-area .heading img {
     width: 329px;
     height: 149px;
-    margin: 40px 0;
+    margin-bottom: 40px;
 }
 
 .contact-info {
@@ -751,7 +876,7 @@ input[type="number"] {
 }
 
 /*===================================*
-  08.START FOOTER STYLE
+  09.START FOOTER STYLE
 *===================================*/
 
 .footer-wrapper {
@@ -833,6 +958,17 @@ input[type="number"] {
     .our-algorithms {
         height: 100vh;
     }
+
+    .client-wrapper .client-bg::after {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .client-wrapper .client-bg::before {
+        width: 100%;
+        height: 700px;
+        right: -100px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 992px) {
@@ -906,6 +1042,17 @@ input[type="number"] {
 
     .footer-item .content-area .social-icon li a {
         font-size: 22px;
+    }
+
+    .client-wrapper .client-bg::after {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .client-wrapper .client-bg::before {
+        width: 100%;
+        height: 600px;
+        right: -50px;
     }
 }
 
@@ -1033,6 +1180,20 @@ input[type="number"] {
     .footer-item .content-area .social-icon li a {
         font-size: 18px;
     }
+
+    .client-wrapper .client-bg .main-content .client-img-2 .img-area img {
+        width: 134px !important;
+        margin-top: 20px;
+    }
+
+    .client-wrapper .client-bg .main-content .client-item1::before {
+        height: 60px;
+        top: -28px;
+    }
+
+    .client-wrapper .client-bg .main-content .client-item {
+        margin-top: 46px !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1060,6 +1221,20 @@ input[type="number"] {
 
     .contact-area .heading img {
         margin: 0 0;
+    }
+
+    .client-wrapper .client-bg::before {
+        top: 19%;
+        right: -35px;
+        height: 28vh;
+    }
+
+    .client-wrapper .client-bg::after {
+        height: 21vh;
+    }
+
+    .client-wrapper .client-bg {
+        padding-bottom: 100px;
     }
 }
 
@@ -1093,6 +1268,11 @@ input[type="number"] {
     .our-algorithms .rightcontent-area h2 {
         padding-top: 0px !important;
     }
+
+    .client-wrapper .client-bg::before {
+        top: 34%;
+        right: -42px;
+    }
 }
 
 @media only screen and (max-width: 540px) and (min-width: 480px) {
@@ -1102,6 +1282,18 @@ input[type="number"] {
 
     .calculator-wrapper .input-item ul li {
         padding: 6px 14px;
+    }
+
+    .client-wrapper .client-bg {
+        padding-bottom: 25px;
+    }
+
+    .client-wrapper .client-bg::before {
+        display: none;
+    }
+
+    .client-wrapper .client-bg::after {
+        display: none;
     }
 }
 
@@ -1134,6 +1326,18 @@ input[type="number"] {
     .our-algorithms {
         height: 100vh;
     }
+
+    .client-wrapper .client-bg .main-content .content-area {
+        padding-top: 59px;
+    }
+
+    .client-wrapper .client-bg::before {
+        display: none;
+    }
+
+    .client-wrapper .client-bg::after {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -1147,6 +1351,10 @@ input[type="number"] {
 
     .our-algorithms {
         height: 100vh;
+    }
+
+    .client-wrapper .client-bg {
+        padding-bottom: 40px;
     }
 }
 
