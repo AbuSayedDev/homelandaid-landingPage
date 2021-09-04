@@ -1347,6 +1347,24 @@ input[type="number"] {
     }
 }
 
+@media only screen and (max-width: 988px) and (min-width: 800px) {
+    #our-algorithms-wrapper {
+        height: 950px;
+    }
+
+    .our-algorithms-slider .item {
+        width: 300px;
+    }
+
+    .w-150 {
+        width: 250px !important;
+    }
+
+    .w-170 {
+        width: 200px !important;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .hero-header .content-area .heading h1 {
         font-size: 64px;
@@ -1560,6 +1578,38 @@ input[type="number"] {
     .client-wrapper .client-bg::before {
         top: 34%;
         right: -42px;
+    }
+}
+
+@media only screen and (max-width: 575px) and (min-width: 480px) {
+    #our-algorithms-wrapper {
+        height: 1450px;
+    }
+
+    .our-algorithms-slider .item {
+        width: 157px;
+    }
+
+    .our-algorithms .rightcontent-area h2 {
+        padding-top: 71px !important;
+    }
+
+    .item-4 {
+        right: 0;
+        position: relative;
+    }
+
+    .item-2 {
+        left: 0;
+        position: relative;
+    }
+
+    .w-150 {
+        width: 250px !important;
+    }
+
+    .w-170 {
+        width: 200px !important;
     }
 }
 
