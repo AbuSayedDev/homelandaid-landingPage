@@ -704,10 +704,12 @@ input[type="number"] {
     padding: 20px;
     border-radius: 20px;
     text-align: center;
+    position: relative;
     transform: scale(1.3);
     background: rgb(190, 72, 92);
     background: linear-gradient(90deg, rgba(190, 72, 92, 1) 0%, rgba(208, 178, 76, 1) 50%, rgba(194, 98, 39, 1) 100%);
 }
+
 
 .our-algorithms-slider .item sup {
     color: #47466e;
@@ -715,6 +717,24 @@ input[type="number"] {
     position: relative;
     top: -3px;
     left: -10px;
+}
+
+.item-33 {
+    position: relative !important;
+}
+
+.item-33::before {
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/slider/slider-after.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute !important;
+    content: "";
+    left: -64px;
+    top: -45px;
+    z-index: 27;
 }
 
 .w-170 {
@@ -1172,7 +1192,7 @@ input[type="number"] {
     }
 
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 38px;
+        padding: 10px 54px;
     }
 
     .input-item ul li {
@@ -1323,6 +1343,7 @@ input[type="number"] {
         right: -28px;
         position: relative;
     }
+
 
     .our-algorithms::after {
         width: 40%;
@@ -1698,7 +1719,7 @@ input[type="number"] {
 
 @media only screen and (max-width: 540px) and (min-width: 480px) {
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 71px;
+        padding: 10px 85px;
     }
 
     .calculator-wrapper .input-item ul li {
@@ -1786,6 +1807,10 @@ input[type="number"] {
 
     .w-150 {
         width: 183px !important;
+    }
+
+    .item-33::before {
+        display: none;
     }
 }
 
