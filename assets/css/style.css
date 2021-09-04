@@ -1191,6 +1191,7 @@ input[type="number"] {
     .client-wrapper .client-bg::after {
         width: 100%;
         height: 100vh;
+        bottom: 0 !important;
     }
 
     .client-wrapper .client-bg::before {
@@ -1207,12 +1208,13 @@ input[type="number"] {
     .our-algorithms::after {
         width: 100%;
         height: 100vh;
+        bottom: 5%;
     }
 
     .our-algorithms::before {
         width: 100%;
         height: 100vh;
-        top: 40%;
+        top: 30%;
     }
 }
 
@@ -1323,14 +1325,14 @@ input[type="number"] {
     }
 
     .our-algorithms::after {
-        width: 50%;
-        height: 70vh;
+        width: 40%;
+        height: 50vh;
     }
 
     .our-algorithms::before {
-        width: 100%;
-        height: 100vh;
-        top: 30%;
+        width: 60%;
+        height: 60vh;
+        top: 00%;
     }
 }
 
@@ -1538,10 +1540,12 @@ input[type="number"] {
         position: relative;
     }
 
+    .our-algorithms::after {
+        display: none !important;
+    }
+
     .our-algorithms::before {
-        width: 100%;
-        height: 100vh;
-        top: 40%;
+        display: none !important;
     }
 }
 
