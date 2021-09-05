@@ -1178,6 +1178,19 @@ input[type="number"] {
     margin-top: 0px;
 }
 
+@media only screen and (min-width: 1200px) {
+    .item2-area {
+        position: relative;
+        left: -28px;
+    }
+
+    .item4-area {
+        position: relative;
+        right: -28px;
+    }
+}
+
+
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
     .custom-btn {
         padding: 10px 15px;
