@@ -119,6 +119,7 @@ input[type="number"] {
     display: inline-block;
 }
 
+
 /*===================================*
   02.START HEADER STYLE
 *===================================*/
@@ -1207,6 +1208,18 @@ input[type="number"] {
     .contact-area::before {
         width: 80%;
         height: 80%;
+    }
+
+    .container {
+        max-width: 75% !important;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tab-area .nav-pills .nav-item .nav-link {
+        padding: 10px 75px;
     }
 }
 
