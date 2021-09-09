@@ -155,6 +155,8 @@ input[type="number"] {
     padding-left: 1rem;
     position: relative;
     display: inline-block;
+    transition: all 2s;
+    -webkit-transition: all 2s;
 }
 
 .nav-menu .navbar-nav .nav-item .nav-link::before {
@@ -178,7 +180,12 @@ input[type="number"] {
 
 .navbar-nav .nav-item .nav-link:hover {
     color: #ffffff;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
+
 
 /* hero-header */
 .hero-header {
@@ -1307,7 +1314,28 @@ input[type="number"] {
 
 @media only screen and (max-width: 1024px) and (min-width: 992px) {
     .hero-header .content-area .heading h1 {
-        font-size: 47px;
+        font-size: 30px;
+    }
+    .header-wrapper {
+        height: 620px;
+    }
+
+
+    .blog-area .blog-item .heading h3 {
+        font-size: 16px !important;
+    }
+
+    .client-wrapper .client-bg .main-content .client-item .content-ara p {
+        padding: 0 0;
+    }
+    .client-wrapper .client-bg .main-content .client-item .content-ara h2 {
+        font-size: 19px;
+    }
+    .client-wrapper .client-bg {
+        padding-bottom: 94px;
+    }
+    .client-wrapper .client-bg::after {
+        height: 60vh;
     }
 
     .custom-btn,
@@ -1378,11 +1406,6 @@ input[type="number"] {
         font-size: 22px;
     }
 
-    .client-wrapper .client-bg::after {
-        width: 100%;
-        height: 30vh;
-    }
-
     .client-wrapper .client-bg::before {
         width: 100%;
         height: 600px;
@@ -1424,7 +1447,7 @@ input[type="number"] {
     }
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .nav-menu .navbar-nav .nav-item .nav-link:hover::before {
         display: none;
     }
@@ -1435,8 +1458,8 @@ input[type="number"] {
         font-size: 18px;
     }
 
-    .hero-header .content-area .heading h1 {
-        font-size: 45px;
+    #calculator-area {
+        padding: 0 0 0 0;
     }
 
     .calculator-wrapper {
@@ -1451,7 +1474,7 @@ input[type="number"] {
     .our-algorithms {
         height: 100vh;
     }
-}
+} */
 
 @media only screen and (max-width: 992px) and (min-width: 800px) {
     .tab-area .nav-pills .nav-item .nav-link {
@@ -1463,7 +1486,7 @@ input[type="number"] {
     }
 
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 130px;
+        padding: 10px 70px;
     }
 
     .calculator-wrapper .right-item-area {
@@ -1475,13 +1498,13 @@ input[type="number"] {
     }
 
     .calculator-wrapper .input-item ul li {
-        margin: 0px 32px;
-        padding: 6px 20px;
+        margin: 0px 10px;
+        padding: 6px 10px;
     }
 
-    #calculator-area {
+    /* #calculator-area {
         padding: 150px 0 0 0;
-    }
+    } */
 
     .contact-area {
         padding: 0px 0 0 0 !important;
@@ -1491,6 +1514,17 @@ input[type="number"] {
 @media only screen and (max-width: 988px) and (min-width: 800px) {
     #our-algorithms-wrapper {
         height: 950px;
+    }
+
+    .hero-header .content-area .heading h1 {
+        font-size: 32px;
+    }
+
+    .header-wrapper {
+        height: 800px;
+    }
+    .tab-area .nav-pills .nav-item .nav-link {
+        padding: 10px 130px;
     }
 
     .our-algorithms-slider .item {
@@ -1508,7 +1542,13 @@ input[type="number"] {
 
 @media only screen and (max-width: 800px) {
     .hero-header .content-area .heading h1 {
-        font-size: 64px;
+        font-size: 45px;
+    }
+    .client-wrapper .client-bg::before {
+        display: none;
+    }
+    .blog-area .blog-item .heading h3 {
+        font-size: 16px;
     }
 
     .hero-header .content-area .btn-area {
@@ -1671,11 +1711,21 @@ input[type="number"] {
     }
 
     .client-wrapper .client-bg::after {
-        height: 21vh;
+        height: 50vh;
     }
 
     .client-wrapper .client-bg {
         padding-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+    .tab-area .nav-pills .nav-item .nav-link {
+        padding: 10px 85px;
+    }
+
+    .calculator-wrapper .input-item ul li {
+        margin: 0px 11px;
     }
 }
 
@@ -1704,15 +1754,6 @@ input[type="number"] {
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 600px) {
-    .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 85px;
-    }
-
-    .calculator-wrapper .input-item ul li {
-        margin: 0px 11px;
-    }
-}
 
 @media only screen and (max-width: 600px) {
     .tab-area .nav-pills .nav-item .nav-link {
@@ -1724,7 +1765,10 @@ input[type="number"] {
     }
 
     .calculator-wrapper .right-item-area .content-area h1 {
-        font-size: 51px;
+        font-size: 34px;
+    }
+    .our-algorithms .rightcontent-area {
+        height: 346px;
     }
 
     .our-algorithms {
@@ -1732,7 +1776,7 @@ input[type="number"] {
     }
 
     .our-algorithms .rightcontent-area h2 {
-        padding-top: 0px !important;
+        padding-top: 65px !important;
     }
 
     .client-wrapper .client-bg::before {
@@ -1744,6 +1788,10 @@ input[type="number"] {
 @media only screen and (max-width: 575px) and (min-width: 480px) {
     #our-algorithms-wrapper {
         height: 1450px;
+    }
+
+    .tab-area .nav-pills .nav-item .nav-link {
+        padding: 10px 94px;
     }
 
     .our-algorithms-slider .item {
@@ -1814,11 +1862,34 @@ input[type="number"] {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .hero-header .content-area .heading h1 {
-        font-size: 42px;
-        line-height: 55px;
+        font-size: 30px;
     }
+
+    .calculator-wrapper {
+        padding-top: 112px !important;
+    }
+    .calculator-wrapper .right-item-area .content-area h1 {
+        font-size: 24px;
+        line-height: 45px;
+    }
+    .tab-area .nav-pills .nav-item .nav-link {
+        padding: 10px 75px;
+    }
+
+    .hero-header, .calculator-wrapper, .service-area, .our-algorithms, .blog-area, .client-wrapper, .contact-area, .footer-wrapper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .blog-area .heading h2 {
+        font-size: 37px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
 
     #calculator-area {
         padding: 50px 0 0 0;
@@ -1829,7 +1900,19 @@ input[type="number"] {
     }
 
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 70px;
+        padding: 10px 60px;
+    }
+    .our-algorithms .rightcontent-area {
+        height: 283px;
+    }
+    .blog-area .heading h2 {
+        font-size: 29px;
+    }
+    .blog-item-area {
+        margin-top: 0 !important;
+    }
+    .contact-area{
+        margin-top: 50px;
     }
 
     .calculator-wrapper .input-item ul li {
@@ -1883,11 +1966,26 @@ input[type="number"] {
 
 @media screen and (max-width: 414px) {
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 54px;
+        padding: 10px 49px;
+    }
+    .calculator-item-area {
+        padding: 20px 20px;
+    }    
+
+    .hero-header .content-area .heading h1 {
+        font-size: 27px;
+    }
+    .custom-btn {
+        padding: 10px 21px;
+        font-size: 20px;
+    }
+    .hero-header .content-area .btn-area .custom-btn-cal {
+        padding: 10px 18px;
+        font-size: 20px;
     }
 
     .calculator-wrapper .input-item ul li {
-        padding: 6px 12px;
+        padding: 6px 10px;
     }
 
     .our-algorithms {
@@ -1905,21 +2003,20 @@ input[type="number"] {
 
 @media screen and (max-width: 411px) {
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 53px;
+        padding: 10px 48px !important;
     }
 
     .calculator-wrapper .input-item ul li {
-        padding: 6px 12px;
+        padding: 6px 9px;
     }
-
-    .calculator-wrapper .right-item-area .content-area h1 span {
-        font-size: 39px;
+    .blog-area .heading h2 {
+        font-size: 27px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 50px;
+        padding: 10px 45px;
     }
 
     .calculator-wrapper .input-item ul li {
@@ -1934,19 +2031,49 @@ input[type="number"] {
     .blog-area .heading {
         margin-bottom: 0 !important;
     }
+    .custom-btn-cal{
+        margin-left: 13px !important;
+    }
+    .input-item ul li {
+        font-size: 14px;
+    }
+    .calculator-wrapper .right-item-area .content-area h1 {
+        font-size: 23px;
+    }
+    .service-area .left-content .content-area h1 {
+        font-size: 34px;
+        line-height: 50px;
+    }
+    .blog-area .heading h2 {
+        font-size: 27px;
+    }
 }
 
 @media screen and (max-width: 384px) {
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 46px;
+        padding: 10px 41px;
     }
-
+    .hero-header .content-area .heading h1 {
+        font-size: 25px;
+    }
+    .custom-btn {
+        font-size: 18px;
+    }
+    .hero-header .form-area .form-control, .contact-area .form-area .form-control, .calculator-wrapper .form-area .form-control {
+        font-size: 13px;
+    }
+    .hero-header .content-area .btn-area .custom-btn-cal {
+        font-size: 18px;
+    }
     .calculator-wrapper .input-item ul li {
         padding: 6px 8px;
     }
 
     .calculator-wrapper .right-item-area .content-area h1 {
-        font-size: 41px;
+        font-size: 22px;
+    }
+    .blog-area .heading h2 {
+        font-size: 24px;
     }
 
     #our-algorithms-wrapper {
@@ -1956,35 +2083,80 @@ input[type="number"] {
 
 @media screen and (max-width: 375px) {
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 44px;
+        padding: 10px 39px;
     }
 
     .calculator-wrapper .input-item ul li {
         padding: 6px 7px;
     }
+    .our-algorithms-slider .item {
+        width: 222px;
+        margin: 20px 0 !important;
+    }
+    .w-150 {
+        width: 175px !important;
+    }
+    .w-170 {
+        width: 145px !important;
+    }
+    .client-wrapper .client-bg .main-content .content-area h1 {
+        font-size: 29px;
+        line-height: 50px;
+    }
 }
 
 @media screen and (max-width: 360px) {
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 40px;
+        padding: 10px 35px;
+    }
+    .hero-header .content-area .heading h1 {
+        font-size: 23px;
+    }
+    .custom-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .hero-header .content-area .btn-area .custom-btn-cal {
+        padding: 10px 20px;
+        font-size: 16px;
     }
 
     .calculator-wrapper .input-item ul li {
         margin: 0px 2px;
         padding: 6px 6px;
     }
+    .calculator-wrapper .form-area .input-item ul li span img{
+        height: 20px !important;
+    }
+    .calculator-wrapper .form-area .input-item .input-group-text {
+        padding: .375rem .0rem;
+    }
+    .calculator-wrapper .right-item-area .content-area h1 {
+        font-size: 19px;
+    }
+    .our-algorithms .rightcontent-area h2 {
+        line-height: 22px;
+        font-size: 27px;
+    }
+    .w-150 {
+        width: 147px !important;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .hero-header .content-area .heading h1 {
-        font-size: 32px;
+        font-size: 20px;
         line-height: 43px;
     }
 
     .custom-btn,
     .hero-header .content-area .btn-area .custom-btn-cal {
         padding: 10px 13px;
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    .calculator-wrapper .right-item-area .content-area h1 {
+        font-size: 17px;
     }
 
     #calculator-area {
@@ -1992,11 +2164,11 @@ input[type="number"] {
     }
 
     .calculator-item-area {
-        padding: 20px 16px;
+        padding: 20px 10px;
     }
 
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 37px;
+        padding: 10px 30px;
     }
 
     .calculator-wrapper .input-item ul li {
@@ -2005,7 +2177,7 @@ input[type="number"] {
     }
 
     .our-algorithms .rightcontent-area h2 {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .our-algorithms {
@@ -2032,48 +2204,43 @@ input[type="number"] {
         left: 0;
     }
 
-    .w-170 {
-        width: 100% !important;
-    }
 
     .w-150 {
-        width: 100% !important;
+        width: 133px !important;
     }
-
-    .our-algorithms-slider .item {
-        width: 100%;
-        margin: 17px 0 !important;
+    .blog-area .heading h2 {
+        font-size: 20px;
+    }
+    .blog-area .blog-item .heading h3 {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .blog-area{
+        padding-top: 0 !important;
     }
 }
 
 @media screen and (max-width: 280px) {
     .hero-header .content-area .heading h1 {
-        font-size: 27px;
+        font-size: 17px;
         line-height: 43px;
     }
-
-    .custom-btn,
-    .hero-header .content-area .btn-area .custom-btn-cal {
-        padding: 10px 12px;
-        font-size: 14px;
+    .custom-btn, .hero-header .content-area .btn-area .custom-btn-cal {
+        padding: 10px 10px;
+        font-size: 13px;
     }
 
     .tab-area .nav-pills .nav-item .nav-link {
-        padding: 10px 27px;
+        padding: 10px 20px;
     }
-
     .calculator-wrapper .input-item ul li {
-        margin: 0px 9px;
+        margin: 0px 7px;
         padding: 6px 0px;
     }
 
     .calculator-wrapper .right-item-area .content-area h1 {
-        font-size: 25px;
+        font-size: 15px;
         line-height: 40px;
-    }
-
-    .calculator-wrapper .right-item-area .content-area h1 span {
-        font-size: 23px;
     }
 
     .header-wrapper {
@@ -2114,6 +2281,35 @@ input[type="number"] {
     }
 
     .our-algorithms-slider .item {
-        width: 200px;
+        width: 162px;
+    }
+    .w-150 {
+        width: 114px !important;
+    }
+    .w-170 {
+        width: 126px !important;
+    }
+    .blog-area .blog-item .heading h3 {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .client-wrapper .client-bg .main-content .content-area h1 {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .client-wrapper .client-bg .main-content .client-item .content-ara p {
+        padding: 0 0px;
+        color: #a1a1b5;
+    }
+    .client-wrapper .client-bg .main-content .client-item .content-ara h2 {
+        font-size: 17px;
+    }
+    .contact-area {
+        margin-top: 15px;
+    }
+    .blog-area .heading h2 {
+        font-size: 15px;
+        line-height: 26px;
+        margin-top: 50px;
     }
 }
