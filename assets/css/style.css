@@ -1168,6 +1168,12 @@ input[type="number"] {
         register 
  <================================== */
 
+.success-wrapper .hero-header .content-area .heading h1,
+.register-wrapper .hero-header .content-area .heading h1 {
+    font-size: 50px;
+    line-height: 80px;
+}
+
 .hero-header .form-area {
     background-color: #442764;
     border: 1px solid #442764;
@@ -1316,6 +1322,7 @@ input[type="number"] {
     .hero-header .content-area .heading h1 {
         font-size: 30px;
     }
+
     .header-wrapper {
         height: 620px;
     }
@@ -1328,12 +1335,15 @@ input[type="number"] {
     .client-wrapper .client-bg .main-content .client-item .content-ara p {
         padding: 0 0;
     }
+
     .client-wrapper .client-bg .main-content .client-item .content-ara h2 {
         font-size: 19px;
     }
+
     .client-wrapper .client-bg {
         padding-bottom: 94px;
     }
+
     .client-wrapper .client-bg::after {
         height: 60vh;
     }
@@ -1445,6 +1455,10 @@ input[type="number"] {
         height: 60vh;
         top: 00%;
     }
+
+    .register-wrapper {
+        height: 711px;
+    }
 }
 
 /* @media only screen and (max-width: 992px) {
@@ -1523,6 +1537,7 @@ input[type="number"] {
     .header-wrapper {
         height: 800px;
     }
+
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 130px;
     }
@@ -1538,15 +1553,25 @@ input[type="number"] {
     .w-170 {
         width: 200px !important;
     }
+
+    .register-wrapper {
+        height: 1050px;
+    }
+
+    .register-wrapper .hero-header .content-area {
+        margin-bottom: 100px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .hero-header .content-area .heading h1 {
         font-size: 45px;
     }
+
     .client-wrapper .client-bg::before {
         display: none;
     }
+
     .blog-area .blog-item .heading h3 {
         font-size: 16px;
     }
@@ -1675,6 +1700,11 @@ input[type="number"] {
     .our-algorithms::before {
         display: none !important;
     }
+
+    .register-wrapper {
+        height: 1150px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1716,6 +1746,20 @@ input[type="number"] {
 
     .client-wrapper .client-bg {
         padding-bottom: 100px;
+    }
+
+    .register-wrapper {
+        height: 1070px;
+    }
+
+    .register-wrapper .hero-header .content-area {
+        margin-bottom: 50px;
+    }
+
+    .success-wrapper .hero-header,
+    .register-wrapper .hero-header {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
 
@@ -1767,6 +1811,7 @@ input[type="number"] {
     .calculator-wrapper .right-item-area .content-area h1 {
         font-size: 34px;
     }
+
     .our-algorithms .rightcontent-area {
         height: 346px;
     }
@@ -1783,6 +1828,16 @@ input[type="number"] {
         top: 34%;
         right: -42px;
     }
+
+    .register-wrapper .hero-header .content-area .heading h1 {
+        font-size: 40px;
+        line-height: 63px;
+    }
+
+    .register-wrapper {
+        height: 1100px;
+    }
+
 }
 
 @media only screen and (max-width: 575px) and (min-width: 480px) {
@@ -1870,15 +1925,24 @@ input[type="number"] {
     .calculator-wrapper {
         padding-top: 112px !important;
     }
+
     .calculator-wrapper .right-item-area .content-area h1 {
         font-size: 24px;
         line-height: 45px;
     }
+
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 75px;
     }
 
-    .hero-header, .calculator-wrapper, .service-area, .our-algorithms, .blog-area, .client-wrapper, .contact-area, .footer-wrapper {
+    .hero-header,
+    .calculator-wrapper,
+    .service-area,
+    .our-algorithms,
+    .blog-area,
+    .client-wrapper,
+    .contact-area,
+    .footer-wrapper {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
@@ -1902,16 +1966,20 @@ input[type="number"] {
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 60px;
     }
+
     .our-algorithms .rightcontent-area {
         height: 283px;
     }
+
     .blog-area .heading h2 {
         font-size: 29px;
     }
+
     .blog-item-area {
         margin-top: 0 !important;
     }
-    .contact-area{
+
+    .contact-area {
         margin-top: 50px;
     }
 
@@ -1962,23 +2030,31 @@ input[type="number"] {
     .item-33::before {
         display: none;
     }
+
+    .success-wrapper .hero-header .content-area .heading h1 {
+        font-size: 32px;
+        line-height: 74px;
+    }
 }
 
 @media screen and (max-width: 414px) {
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 49px;
     }
+
     .calculator-item-area {
         padding: 20px 20px;
-    }    
+    }
 
     .hero-header .content-area .heading h1 {
         font-size: 27px;
     }
+
     .custom-btn {
         padding: 10px 21px;
         font-size: 20px;
     }
+
     .hero-header .content-area .btn-area .custom-btn-cal {
         padding: 10px 18px;
         font-size: 20px;
@@ -1999,6 +2075,20 @@ input[type="number"] {
     #our-algorithms-wrapper {
         height: 1300px;
     }
+
+    .register-wrapper .hero-header .content-area .heading h1 {
+        font-size: 33px;
+        line-height: 63px;
+    }
+
+    .hero-header .form-area {
+        margin-top: 0px !important;
+    }
+
+    .success-wrapper .hero-header .content-area .heading h1 {
+        font-size: 28px;
+        line-height: 63px;
+    }
 }
 
 @media screen and (max-width: 411px) {
@@ -2009,6 +2099,7 @@ input[type="number"] {
     .calculator-wrapper .input-item ul li {
         padding: 6px 9px;
     }
+
     .blog-area .heading h2 {
         font-size: 27px;
     }
@@ -2031,19 +2122,24 @@ input[type="number"] {
     .blog-area .heading {
         margin-bottom: 0 !important;
     }
-    .custom-btn-cal{
+
+    .custom-btn-cal {
         margin-left: 13px !important;
     }
+
     .input-item ul li {
         font-size: 14px;
     }
+
     .calculator-wrapper .right-item-area .content-area h1 {
         font-size: 23px;
     }
+
     .service-area .left-content .content-area h1 {
         font-size: 34px;
         line-height: 50px;
     }
+
     .blog-area .heading h2 {
         font-size: 27px;
     }
@@ -2053,18 +2149,25 @@ input[type="number"] {
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 41px;
     }
+
     .hero-header .content-area .heading h1 {
         font-size: 25px;
     }
+
     .custom-btn {
         font-size: 18px;
     }
-    .hero-header .form-area .form-control, .contact-area .form-area .form-control, .calculator-wrapper .form-area .form-control {
+
+    .hero-header .form-area .form-control,
+    .contact-area .form-area .form-control,
+    .calculator-wrapper .form-area .form-control {
         font-size: 13px;
     }
+
     .hero-header .content-area .btn-area .custom-btn-cal {
         font-size: 18px;
     }
+
     .calculator-wrapper .input-item ul li {
         padding: 6px 8px;
     }
@@ -2072,12 +2175,22 @@ input[type="number"] {
     .calculator-wrapper .right-item-area .content-area h1 {
         font-size: 22px;
     }
+
     .blog-area .heading h2 {
         font-size: 24px;
     }
 
     #our-algorithms-wrapper {
         height: 1250px;
+    }
+
+    .register-wrapper {
+        height: 1014px;
+    }
+
+    .register-wrapper .hero-header .content-area .heading h1 {
+        font-size: 31px;
+        line-height: 52px;
     }
 }
 
@@ -2089,16 +2202,20 @@ input[type="number"] {
     .calculator-wrapper .input-item ul li {
         padding: 6px 7px;
     }
+
     .our-algorithms-slider .item {
         width: 222px;
         margin: 20px 0 !important;
     }
+
     .w-150 {
         width: 175px !important;
     }
+
     .w-170 {
         width: 145px !important;
     }
+
     .client-wrapper .client-bg .main-content .content-area h1 {
         font-size: 29px;
         line-height: 50px;
@@ -2109,13 +2226,16 @@ input[type="number"] {
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 35px;
     }
+
     .hero-header .content-area .heading h1 {
         font-size: 23px;
     }
+
     .custom-btn {
         padding: 10px 20px;
         font-size: 16px;
     }
+
     .hero-header .content-area .btn-area .custom-btn-cal {
         padding: 10px 20px;
         font-size: 16px;
@@ -2125,19 +2245,24 @@ input[type="number"] {
         margin: 0px 2px;
         padding: 6px 6px;
     }
-    .calculator-wrapper .form-area .input-item ul li span img{
+
+    .calculator-wrapper .form-area .input-item ul li span img {
         height: 20px !important;
     }
+
     .calculator-wrapper .form-area .input-item .input-group-text {
         padding: .375rem .0rem;
     }
+
     .calculator-wrapper .right-item-area .content-area h1 {
         font-size: 19px;
     }
+
     .our-algorithms .rightcontent-area h2 {
         line-height: 22px;
         font-size: 27px;
     }
+
     .w-150 {
         width: 147px !important;
     }
@@ -2208,15 +2333,28 @@ input[type="number"] {
     .w-150 {
         width: 133px !important;
     }
+
     .blog-area .heading h2 {
         font-size: 20px;
     }
+
     .blog-area .blog-item .heading h3 {
         font-size: 15px;
         line-height: 28px;
     }
-    .blog-area{
+
+    .blog-area {
         padding-top: 0 !important;
+    }
+
+    .register-wrapper .hero-header .content-area .heading h1 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .success-wrapper .hero-header .content-area .heading h1 {
+        font-size: 23px;
+        line-height: 54px;
     }
 }
 
@@ -2225,7 +2363,9 @@ input[type="number"] {
         font-size: 17px;
         line-height: 43px;
     }
-    .custom-btn, .hero-header .content-area .btn-area .custom-btn-cal {
+
+    .custom-btn,
+    .hero-header .content-area .btn-area .custom-btn-cal {
         padding: 10px 10px;
         font-size: 13px;
     }
@@ -2233,6 +2373,7 @@ input[type="number"] {
     .tab-area .nav-pills .nav-item .nav-link {
         padding: 10px 20px;
     }
+
     .calculator-wrapper .input-item ul li {
         margin: 0px 7px;
         padding: 6px 0px;
@@ -2283,33 +2424,46 @@ input[type="number"] {
     .our-algorithms-slider .item {
         width: 162px;
     }
+
     .w-150 {
         width: 114px !important;
     }
+
     .w-170 {
         width: 126px !important;
     }
+
     .blog-area .blog-item .heading h3 {
         font-size: 13px;
         line-height: 23px;
     }
+
     .client-wrapper .client-bg .main-content .content-area h1 {
         font-size: 20px;
         line-height: 33px;
     }
+
     .client-wrapper .client-bg .main-content .client-item .content-ara p {
         padding: 0 0px;
         color: #a1a1b5;
     }
+
     .client-wrapper .client-bg .main-content .client-item .content-ara h2 {
         font-size: 17px;
     }
+
     .contact-area {
         margin-top: 15px;
     }
+
     .blog-area .heading h2 {
         font-size: 15px;
         line-height: 26px;
         margin-top: 50px;
+    }
+
+    .success-wrapper .hero-header .content-area .heading h1 {
+        font-size: 19px;
+        line-height: 44px;
     }
 }
